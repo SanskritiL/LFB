@@ -2,7 +2,7 @@ setTimeout(function () {
     chrome.storage.sync.get('toggleState', function(data) {
         const isChecked = data.toggleState || false;
         if(isChecked){
-            const feedElements = document.querySelectorAll('.scaffold-layout__main');
+            const feedElements = document.querySelectorAll('.scaffold-layout__row');
             feedElements.forEach(feed => {
                     feed.style.display = 'none'
             });
